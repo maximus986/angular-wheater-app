@@ -1,3 +1,3 @@
-interface Weather {
-  temp: number;
+export interface Weather {
+  consolidated_weather: [];
 }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Location } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Location } from '../models/location';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,9 @@ export class LocationService {
 
   constructor(private http: HttpClient) {}
 
-  getLocations(): Observable<Location[]> {
-    return this.http.get<Location[]>('/api/location/search/?query=bel');
+  getLocations(city): Observable<Location[]> {
+    return this.http.get<Location[]>(`/api/location/search/?query=${city}`);
   }
+
+  
 }

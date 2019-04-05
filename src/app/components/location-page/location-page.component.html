@@ -1,1 +1,2 @@
-<app-search-locations></app-search-locations> <app-show-locations></app-show-locations>
+<app-search-locations (searchedLocations)="onLocationSearch($event)"></app-search-locations>
+<app-show-locations [locations]="locations"></app-show-locations>

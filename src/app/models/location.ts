@@ -1,4 +1,4 @@
-interface Location {
-    title: string;
-    woeid: string;
+export interface Location {
+  title: string;
+  woeid: number;
 }

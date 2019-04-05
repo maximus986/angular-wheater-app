@@ -1,0 +1,22 @@
+.locations {
+  width: 70%;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  background: #eff9ff;
+  border-radius: 4px;
+  color: #5091ba;
+  .location {
+    border-bottom: 1px solid lighten(#5091ba, 30%);
+    padding: 10px;
+    transition: 0.3s linear;
+    cursor: pointer;
+    &:hover {
+      margin-left: 5px;
+      color: darken(#5091ba, 30%);
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
