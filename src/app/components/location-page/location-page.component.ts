@@ -14,6 +14,5 @@ export class LocationPageComponent implements OnInit {
   ngOnInit() {}
   onLocationSearch(locations) {
     this.locations = locations;
-    console.log(this.locations);
   }
 }

@@ -6,7 +6,8 @@ import { WeatherPageComponent } from './components/weather-page/weather-page.com
 const routes: Routes = [
   { path: '', redirectTo: '/locations', pathMatch: 'full' },
   { path: 'locations', component: LocationPageComponent },
-  { path: 'locations/weather', component: WeatherPageComponent }
+  { path: 'locations/weather', component: WeatherPageComponent },
+  { path: 'locations/weather/:id', component: WeatherPageComponent }
 ];
 
 @NgModule({

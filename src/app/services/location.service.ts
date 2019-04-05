@@ -14,6 +14,4 @@ export class LocationService {
   getLocations(city): Observable<Location[]> {
     return this.http.get<Location[]>(`/api/location/search/?query=${city}`);
   }
-
-  
 }

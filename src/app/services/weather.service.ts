@@ -11,7 +11,7 @@ export class WeatherService {
 
   constructor(private http: HttpClient) {}
 
-  getWeather(woeid): Observable<Weather> {
-    return this.http.get<Weather>(`/api/location/${woeid}`);
+  getWeather(id): Observable<Weather[]> {
+    return this.http.get<Weather[]>(`/api/location/${id}`);
   }
 }
