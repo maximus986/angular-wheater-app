@@ -15,12 +15,12 @@ export class WeatherPageComponent implements OnInit {
 
   ngOnInit() {
     this.id = Number(this.route.snapshot.paramMap.get('id'));
+    this.getWeather();
   }
 
   getWeather() {
-    return this.weatherService.getWeather(44418).subscribe(weather => {
+    return this.weatherService.getWeather(this.id).subscribe(weather => {
       this.weather = weather;
-      console.log(this.id);
       console.log(this.weather);
     });
   }

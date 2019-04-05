@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { LocationService } from 'src/app/services/Location.service';
+import { LocationService } from 'src/app/services/location.service';
 import { Location } from 'src/app/models/location';
 
 @Component({

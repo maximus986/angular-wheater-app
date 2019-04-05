@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Location } from 'src/app/models/location';
-import { LocationService } from 'src/app/services/Location.service';
+import { LocationService } from 'src/app/services/location.service';
 
 @Component({
   selector: 'app-location-page',
