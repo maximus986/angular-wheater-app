@@ -10,7 +10,7 @@ import { Weather } from 'src/app/models/weather';
 })
 export class WeatherPageComponent implements OnInit {
   id: number;
-  weather;
+  weather: Weather[];
   constructor(private route: ActivatedRoute, private weatherService: WeatherService) {}
 
   ngOnInit() {
