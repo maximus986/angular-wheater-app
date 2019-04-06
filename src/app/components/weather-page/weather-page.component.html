@@ -1,1 +1,10 @@
-<app-display-weather></app-display-weather>
+<h3 class="city-name">City: {{ weather.title }}</h3>
+<ul class="weather">
+  <li class="weather-item" *ngFor="let tempInfo of tempInfos">
+    Date: {{ tempInfo.applicable_date }} <br />
+    <span>Temperature: {{ tempInfo.the_temp }}</span>
+  </li>
+</ul>
+<div class="btn-wrapper">
+  <a routerLink="/locations" class="btn-backwards">Back</a>
+</div>

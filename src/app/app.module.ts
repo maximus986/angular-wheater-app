@@ -9,17 +9,9 @@ import { LocationPageComponent } from './components/location-page/location-page.
 import { WeatherPageComponent } from './components/weather-page/weather-page.component';
 import { SearchLocationsComponent } from './components/location-page/search-locations/search-locations.component';
 import { ShowLocationsComponent } from './components/location-page/show-locations/show-locations.component';
-import { DisplayWeatherComponent } from './components/weather-page/display-weather/display-weather.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LocationPageComponent,
-    WeatherPageComponent,
-    SearchLocationsComponent,
-    ShowLocationsComponent,
-    DisplayWeatherComponent
-  ],
+  declarations: [AppComponent, LocationPageComponent, WeatherPageComponent, SearchLocationsComponent, ShowLocationsComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]

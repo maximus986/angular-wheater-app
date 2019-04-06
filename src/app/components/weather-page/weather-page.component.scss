@@ -1,0 +1,37 @@
+.city-name {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.weather {
+  width: 70%;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  background: #eff9ff;
+  border-radius: 4px;
+  color: #5091ba;
+  &-item {
+    border-bottom: 1px solid lighten(#5091ba, 30%);
+    padding: 10px;
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+.btn-wrapper {
+  text-align: center;
+}
+.btn-backwards {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #eff9ff;
+  color: #5091ba;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s linear;
+  &:hover {
+    background: darken(#5091ba, 15%);
+    color: #eff9ff;
+  }
+}

@@ -11,6 +11,7 @@ import { Weather } from 'src/app/models/weather';
 export class WeatherPageComponent implements OnInit {
   id: number;
   weather: Weather[];
+  tempInfos;
   constructor(private route: ActivatedRoute, private weatherService: WeatherService) {}
 
   ngOnInit() {
@@ -21,7 +22,9 @@ export class WeatherPageComponent implements OnInit {
   getWeather() {
     return this.weatherService.getWeather(this.id).subscribe(weather => {
       this.weather = weather;
-      console.log(this.weather);
+      const props = Object.keys(this.weather);
+      this.tempInfos = this.weather.consolidated_weather;
+      console.log(this.tempInfos);
     });
   }
 }
